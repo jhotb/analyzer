@@ -15,8 +15,8 @@ class Benchmark::IPS::Job
   end
 end
 
-Benchmark.ips(quiet: true) do |x|
-  x.config(stats: :bootstrap, confidence: 98)
+Benchmark.ips do |x|
+  x.config(stats: :bootstrap, confidence: 98, quiet: true)
   x.report("analyze", <<-CODEFILE)
     <%= src %>
   CODEFILE

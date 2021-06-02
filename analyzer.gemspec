@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2'
   s.requirements << 'gnuplot'
   
-  s.add_runtime_dependency 'benchmark-ips', '~> 2.7'
+  s.add_runtime_dependency 'benchmark-ips', '~> 2.9'
 end
